@@ -1,0 +1,44 @@
+{
+  "name": "setup-msbuild",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Helps set up specific MSBuild tool into PATH for later usage.",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "pack": "ncc build",
+    "all": "npm run build && npm run format && npm run lint && npm run pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/step-security/setup-msbuild.git"
+  },
+  "keywords": [
+    "actions",
+    "vs",
+    "setup",
+    "visual studio",
+    "msbuild",
+    "vstest"
+  ],
+  "author": "step-security",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.0.3",
+    "axios": "^1.13.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@typescript-eslint/eslint-plugin": "^8.30.0",
+    "@typescript-eslint/parser": "^8.30.0",
+    "@vercel/ncc": "^0.38.3",
+    "eslint": "^8.57.0",
+    "js-yaml": "^4.1.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
