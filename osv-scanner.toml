@@ -1,0 +1,3 @@
+[[IgnoredVulns]]
+id = "GHSA-2g4f-4pwh-qvx6"
+reason = "ajv is a transitive dependency of eslint ecosystem and use only in linting not bundled in production code."
