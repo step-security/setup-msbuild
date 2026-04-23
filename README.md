@@ -1,3 +1,5 @@
+[![StepSecurity Maintained Action](https://raw.githubusercontent.com/step-security/maintained-actions-assets/main/assets/maintained-action-banner.png)](https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions)
+
 # step-security/setup-msbuild
 
 This action will help discover where the `MSBuild` tool is and automatically add it to the `PATH` environment variables for you so future steps in your Actions workflow can just initiate `msbuild` commands without knowing the full path.
